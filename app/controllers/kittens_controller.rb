@@ -11,6 +11,10 @@ class KittensController < ApplicationController
     @kitten = Kitten.new
   end
 
+  def edit
+    @kitten = Kitten.find(params[:id])
+  end
+
   def create
     @kitten = Kitten.new(kitten_params)
 

@@ -1,5 +1,11 @@
 <h2>Kitten</h2>
 
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
+
 <div>
   <h5>name: <%= @kitten.name %></h5>
   <p>age: <%= @kitten.age %></p>
